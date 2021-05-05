@@ -1,3 +1,98 @@
+@font-face {
+    font-family: "policeUn";
+    src: url("../polices/Sue\ Ellen\ Francisco.ttf");
+}
+
+#titre {
+    font-family: "policeUn";
+    font-size: 36px;
+    text-align: center;
+    color: #8E4D4D;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-bottom: 213px;*/
+}
+
 body {
     background-color: #FFF2AE;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nom {
+    width: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#textnom {
+    margin-left: 10px;
+    font-family: policeUn;
+    font-size: 20px;
+}
+
+#nameUn {
+    font-family: policeUn;
+    font-size: 20px;
+    border: 0px;
+    width: auto;
+}
+
+#textage {
+    margin-left: 10px;
+    font-family: policeUn;
+    font-size: 20px;
+}
+
+#ages {
+    font-family: policeUn;
+    font-size: 20px;
+    border: 0px;
+    width: auto;
+}
+
+#textprenom {
+    margin-left: 10px;
+    font-family: policeUn;
+    font-size: 20px;
+}
+
+#prename {
+    font-family: policeUn;
+    font-size: 20px;
+    border: 0px;
+    width: auto;
+}
+
+.prenom {
+    width: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.age {
+    width: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 57px;
+}
+
+.boutonfooter {
+    font-family: policeUn;
+    border-radius: 15px;
+    width: -webkit-fill-available;
+    font-size: 20px;
+}
+
+.footer {
+    text-align-last: center;
 }

@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <title>accueil</title>
 </head>
+
+
 <body>
-    <div id="header">Welcome to index page</div>
-    <div id="content">
-        <p>Enter your name</p>
-        <form action="/mqtt/start" method="post" accept-charset="utf-8">{% csrf_token %}
-            <input type="text" name="nomPerson">
-            <input type="submit" value="Send!">
-        </form>
+    <p id="titre">Mon Terrarium </p>
+    <span id="image"><img src="../images/terrarium.svg"></span>
+    <div class="reponse">
+
+        <form action="./page1-form" method="post">
+            <div class="nom">
+                <label for="name" id="textnom">Nom :</label>
+
+                <input type="text" id="nameUn" name="name" required minlength="4" maxlength="16" size="10">
+            </div>
+
+            <div class="prenom">
+                <label for="prename" id="textprenom">Prenom :</label>
+
+                <input type="text" id="prename" name="prename" required minlength="4" maxlength="15" size="10">
+            </div>
+
+
+            <div class="age">
+                <label for="age" id="textage">Age :</label>
+
+                <input type="text" id="ages" name="ages" required minlength="4" maxlength="8" size="10">
+            </div>
     </div>
+
+    <div class="footer">
+        <input type="submit" value="Continuez" class="boutonfooter">
+    </div>
+    </form>
+
+
+    <script type="text/javascript" src="../page acceuil/acceuil.js"></script>
+    <script type="text/javascript" src="../page1/page1.js"></script>
+    </button>
+    </a>
+</body>
+
+</html>
 </body>
 </html>
