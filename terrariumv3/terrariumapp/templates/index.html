@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>accueil</title>
+</head>
+<body>
+    <div id="header">Welcome to index page</div>
+    <div id="content">
+        <p>Enter your name</p>
+        <form action="/mqtt/start" method="post" accept-charset="utf-8">{% csrf_token %}
+            <input type="text" name="nomPerson">
+            <input type="submit" value="Send!">
+        </form>
+    </div>
+</body>
+</html>

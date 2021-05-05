@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Person</title>
+    {% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--<script>-->
+<!--$(document).ready(function(){-->
+<!--    setTimeout(function(){-->
+<!--       location.reload(true);-->
+<!--    }, 6000);-->
+<!--});-->
+<!--</script>-->
+{% endblock content %}
+</head>
+
+<body>
+
+{% for capteur in capteurs %}
+<H1>Je veux des infos sur le capteur  {{capteur.name}}</H1>
+<H2>{{capteur.info}}, la valeur est de : {{capteur.value}} %</H2>
+{% endfor %}
+
+<meta http-equiv="Refresh" content="5; url=http://127.0.0.1:8000/capteurs" />
+
+<H1>résultat mqtt</H1>
+{% for valeur in mqtt %}
+{% for key, value in valeur.items %}
+<H2>{{key}}</H2>
+<H2>{{value}}</H2>
+{% endfor %}
+{% endfor %}
+
+
+
+</body>
+</html>

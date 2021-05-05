@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'terrariumapp/style.css' %}">
+    <title>home</title>
+</head>
+<body>
+    <p id="titre">Mon Terrarium </p>
+    <span id="image"><img src="../images/terrarium.svg"></span>
+    <div class="reponse">
+
+        <form action="/mqtt/start" method="post">{% csrf_token %}
+            {{form}}
+
+
+
+
+
+
+<!--            <div class="nom">-->
+<!--                <label for="name" id="textnom">Nom :</label>-->
+
+<!--                <input type="text" id="name" name="nameUn" required minlength="4" maxlength="16" size="10">-->
+<!--            </div>-->
+
+<!--            <div class="prenom">-->
+<!--                <label for="prename" id="textprenom">Prenom :</label>-->
+
+<!--                <input type="text" id="prename" name="prename" required minlength="4" maxlength="15" size="10">-->
+<!--            </div>-->
+
+
+<!--            <div class="age">-->
+<!--                <label for="ages" id="textage">Age :</label>-->
+
+<!--                <input type="number" id="ages" name="ages" required  size="10">-->
+<!--            </div>-->
+            <input type="submit" value="Continuez" class="boutonfooter">
+        </form>
+    </div>
+
+    <script type="text/javascript" src="../page acceuil/acceuil.js"></script>
+    <script type="text/javascript" src="../page1/page1.js"></script>
+
+
+</body>
+</html>
